@@ -14,4 +14,5 @@ Go into terminal and type
 Done!
 Now you can type
 > opak -h
+
 for the help file
