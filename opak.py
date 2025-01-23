@@ -26,7 +26,7 @@ def instPkg(pkg):
         print(f"This program does not exist. Status code: {response.status_code}")
 
 def removePkg(pkgDir):
-    rmcmd = "rm /usr/local/bin/" + pkgDir + ".py"
+    rmcmd = "sudo rm /usr/local/bin/" + pkgDir
     os.system(str(rmcmd))
     print("Package", pkgDir, "sucsessfully removed.")
 
