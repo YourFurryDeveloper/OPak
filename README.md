@@ -8,6 +8,7 @@ This program currently only supports Linux.
 Download opak-installer.sh
 Go into terminal and type
 > sudo chmod +x opak-installer.sh
+>
 > ./opak-installer.sh
 
 Done!
