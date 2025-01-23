@@ -5,7 +5,7 @@ A cool little package manager I made for fun to download and install all my cool
 This program currently only supports Linux.
 
 ## How to install
-Download > opak-installer.sh
+Download opak-installer.sh
 Go into terminal and type
 > sudo chmod +x opak-installer.sh
 > ./opak-installer.sh
