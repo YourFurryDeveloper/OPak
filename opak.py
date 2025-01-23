@@ -31,18 +31,9 @@ def removePkg(pkgDir):
     print("Package", pkgDir, "sucsessfully removed.")
 
 def listPkgs():
-    api_url = 'https://github.com/YourFurryDeveloper/OPakRepo/blob/main/'
+    plist_url = 'https://raw.githubusercontent.com/YourFurryDeveloper/OPakRepo/refs/heads/main/plist.txt'
 
-    # Send a GET request to the API
-    response = requests.get(api_url)
-
-    # Check if the request was successful
-    if response.status_code == 200:
-        files = response.json()  # Assuming the API returns a JSON list of file names
-        for file in files:
-            print(file)
-        else:
-            print(f"Failed to retrieve files. Status code: {response.status_code}")
+    os.system("curl " + plist_url)
 
 # Create the main parser
 parser = argparse.ArgumentParser(prog='opak', description="A cool package manager developed by YourFurryDeveloper on GitHub")
@@ -57,6 +48,8 @@ install_parser.add_argument('package_name', type=str, help="Name of the package 
 install_parser = subparsers.add_parser('remove', help="Remove the specified package")
 install_parser.add_argument('package_name', type=str, help="Name of the package to install")
 
+install_parser = subparsers.add_parser('list', help="List all packages in the OPak repository")
+
 # Parse the arguments
 args = parser.parse_args()
 
@@ -65,6 +58,8 @@ if args.command == 'install':
     instPkg(args.package_name)
 elif args.command == 'remove':
     removePkg(args.package_name)
+elif args.command == 'list':
+    listPkgs()
 else:
     # If no subcommand or invalid subcommand, print help
     parser.print_help()
