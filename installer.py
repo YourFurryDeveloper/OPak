@@ -51,7 +51,7 @@ def installPrereqs():
         setLoadBar(int(100 / (len(fileurls) + len(cmds)) * actionCount))
         print(f"\nGetting {BOLD}{file}{RESET}...")
         os.makedirs(folders[fileCount - 1], exist_ok=True)
-        if sudoRequired: os.system(f'sudo curl --progress-bar -o "{folders[fileCount - 1]}/$(basename {file})" "{file}"')
+        if sudoRequired: os.system(f'sudo -S curl --progress-bar -o "{folders[fileCount - 1]}/$(basename {file})" "{file}"')
         else: os.system(f'curl --progress-bar -o "{folders[fileCount - 1]}/$(basename {file})" "{file}"')
         #time.sleep(0.5)
 
