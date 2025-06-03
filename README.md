@@ -2,7 +2,7 @@
 A cool little package manager I made for fun to download and install all my cool terminal games and programs
 
 ## SYSTEM SUPPORT
-This program currently only supports Linux.
+This program currently only supports Linux and MacOS (Sorry not sorry Windows lol).
 
 ## How to install
 Download opak-installer.sh
