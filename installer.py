@@ -38,6 +38,10 @@ def installPrereqs():
     actionCount = 0
     setLoadBar(0)
 
+    if sudoRequired:
+        sudoPwd = input("\nSudo is required for this installer. Input your sudo password here.\n(PS, you can check the code, it doesn't send the password anywhere :3)\n>")
+        os.system(f"echo {sudoPwd}")
+
     # File installation
     for file in fileurls:
         actionCount += 1
