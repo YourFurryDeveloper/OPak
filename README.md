@@ -21,4 +21,4 @@ for the help file
 
 OR
 
-Just paste the command `curl -s https://raw.githubusercontent.com/YourFurryDeveloper/OPak/refs/heads/main/installer.py | python3` into terminal.
+Just paste the command `curl -s https://raw.githubusercontent.com/YourFurryDeveloper/OPak/refs/heads/main/opak-installer.sh | bash` or `curl -s https://raw.githubusercontent.com/YourFurryDeveloper/OPak/refs/heads/main/installer.py | python3` into terminal.
