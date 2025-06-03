@@ -7,12 +7,18 @@ This program currently only supports Linux.
 ## How to install
 Download opak-installer.sh
 Go into terminal and type
-> sudo chmod +x opak-installer.sh
->
-> ./opak-installer.sh
+
+`sudo chmod +x opak-installer.sh`
+
+`./opak-installer.sh`
 
 Done!
 Now you can type
-> opak -h
+`opak -h`
 
 for the help file
+
+
+OR
+
+Just paste the command `curl -s [https://path/to/your/installer](https://raw.githubusercontent.com/YourFurryDeveloper/OPak/refs/heads/main/installer.py) | python3` into terminal.
