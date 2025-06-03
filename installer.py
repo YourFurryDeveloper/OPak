@@ -17,7 +17,7 @@ fileurls = ["https://raw.githubusercontent.com/YourFurryDeveloper/OPak/refs/head
 folders = ["./"]
 
 # Here, you can specify any pip prerequisites or commands that need to run during the install process. If there are none, leave blank.
-cmds = ["python3 -m pip install requests", "pip install requests", "sudo apt install python3-requests", "sudo chmod +x opak.py", "sudo mv opak.py /usr/local/bin/opak"]
+cmds = ["python3 -m pip install requests", "pip install requests", "sudo apt install python3-requests", "sudo chmod +x opak.py", "sudo -S mv opak.py /usr/local/bin/opak"]
 
 sudoRequired = True
 
