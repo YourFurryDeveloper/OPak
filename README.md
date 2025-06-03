@@ -21,7 +21,9 @@ for the help file
 
 OR
 
-Just paste the command `curl -s https://raw.githubusercontent.com/YourFurryDeveloper/OPak/refs/heads/main/opak-installer.sh | bash`
+Just paste the command
+
+`curl -s https://raw.githubusercontent.com/YourFurryDeveloper/OPak/refs/heads/main/opak-installer.sh | bash`
 
 or
 
